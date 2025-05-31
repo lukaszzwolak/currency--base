@@ -1,8 +1,8 @@
-import styles from './Select.module.scss';
+import styles from "./Select.module.scss";
 
-const Select = ({ children, onChange, ...rest }) => {
+const Select = ({ children, ...rest }) => {
   return (
-    <select onChange={onChange} className={styles.select} {...rest}>
+    <select className={styles.select} {...rest}>
       {children}
     </select>
   );

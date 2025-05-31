@@ -1,12 +1,7 @@
-import styles from './TextInput.module.scss';
+import styles from "./TextInput.module.scss";
 
-const TextInput = props => {
-  return (
-    <input
-      {...props}
-      className={styles.input}
-      type="text" />
-  );
+const TextInput = (props) => {
+  return <input className={styles.input} {...props} />;
 };
 
 export default TextInput;
